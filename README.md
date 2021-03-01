@@ -18,6 +18,7 @@ virtualenv_info() {
     fi
 }
 
+export VIRTUAL_ENV_DISABLE_PROMPT=1
 export PROMPT_COMMAND=auto_virtualenv
 export PS1="\$(virtualenv_info) ~> "
 ```
